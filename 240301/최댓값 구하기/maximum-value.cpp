@@ -11,7 +11,7 @@ int main() {
             cout<<c;
         }
     }
-    if(b>=a&&c>=a){
+    else if(b>=a&&c>=a){
         if(b>=c){
             cout<<b;
         }
@@ -19,7 +19,7 @@ int main() {
             cout<<c;
         }
     }
-    if(a>=c&&c>=b){
+    else if(a>=c&&c>=b){
         if(a>=c){
             cout<<a;
         }
