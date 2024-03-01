@@ -19,8 +19,13 @@ int main() {
             cout<<c;
         }
     }
-    else{
-        cout<<c;
+    if(a>=c&&c>=b){
+        if(a>=c){
+            cout<<a;
+        }
+        else{
+            cout<<c;
+        }
     }
     // 여기에 코드를 작성해주세요.
     return 0;
