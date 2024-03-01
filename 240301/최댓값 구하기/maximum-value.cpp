@@ -19,12 +19,12 @@ int main() {
             cout<<c;
         }
     }
-    else if(a>=c&&c>=b){
-        if(a>=c){
+    else if(a>=c&&b>=c){
+        if(a>=b){
             cout<<a;
         }
         else{
-            cout<<c;
+            cout<<b;
         }
     }
     // 여기에 코드를 작성해주세요.
