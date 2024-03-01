@@ -6,7 +6,7 @@ int main() {
     if(c>=1.0){
         cout<<"High";
     }
-    else if(c>=0.5,c<1.0){
+    else if(c<1.0, c>=0.5){
         cout<<"Middle";
     }
     else{
