@@ -5,7 +5,7 @@ int main() {
     bool sa=true;
     for(int i=0;i<5;i++){
         cin>>n;
-        if(i%3!=0){
+        if(n%3!=0){
             sa=false;
             break;
         }
