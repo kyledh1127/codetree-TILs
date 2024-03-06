@@ -7,6 +7,7 @@ int main() {
         cin>>n;
         if(i%3!=0){
             sa=false;
+            break;
         }
 
     }
