@@ -7,14 +7,11 @@ int main() {
         cin>>n;
         if(n%3!=0){
             sa=false;
-            break;
+            cout<<0;
         }
 
     }
-    if(sa=false){
-        cout<<0;
-    }
-    else{
+    if(sa=true){
         cout<<1;
     }
     // 여기에 코드를 작성해주세요.
