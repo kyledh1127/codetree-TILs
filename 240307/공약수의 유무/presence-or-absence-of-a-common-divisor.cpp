@@ -4,8 +4,8 @@ int main() {
     int a,b;
     cin >> a >> b;
     bool satisfied=false;
-    for(int i=2;i<=a;i++){
-        if(b%i == 0 && a%i == 0){
+    for(int i=a;i<=b;i++){
+        if(1920%i == 0 && 2880%i == 0){
             satisfied = true;
         }
     }
