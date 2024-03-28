@@ -4,10 +4,9 @@ using namespace std;
 
 int main() {
     int n;
-    cout << "Enter the size of the grid (n x n): ";
     cin >> n;
 
-    int grid[100][100]; // 최대 크기 100 x 100으로 가정
+    int grid[10][10]; // 최대 크기 10 x 10으로 가정
 
     int num = 1;
 
@@ -24,10 +23,12 @@ int main() {
     }
 
     // 결과 출력
-    cout << "Filled grid:" << endl;
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
-            cout << grid[i][j] << "\t";
+            cout << grid[i][j];
+            if (j != n - 1) {
+                cout << " ";
+            }
         }
         cout << endl;
     }
