@@ -4,7 +4,7 @@ int main() {
     string s;
     cin>>s;
     int len= s.length();
-    for(int i=len;i>0;i--){
+    for(int i=len-1;i>=0;i--){
         if(i%2==1){
             cout<<s[i];
         }
