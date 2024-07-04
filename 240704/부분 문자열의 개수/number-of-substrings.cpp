@@ -13,14 +13,14 @@ int main() {
                 }
             }
             if(share==b.length()){
-                cout<<i;
+                
                 count++;
-                share=0;
-                break;
+                
             }
             share=0;
         }
     }
+    cout<<count;
     // 여기에 코드를 작성해주세요.
     return 0;
 }
