@@ -18,7 +18,7 @@ int main() {
                 share=0;
                 break;
             }
-            
+            share=0;
         }
     }
     if(num==-1){
