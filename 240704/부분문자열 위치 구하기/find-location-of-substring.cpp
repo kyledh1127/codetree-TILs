@@ -15,8 +15,10 @@ int main() {
             if(share==b.length()){
                 cout<<i;
                 num=0;
+                share=0;
+                break;
             }
-            share=0;
+            
         }
     }
     if(num==-1){
