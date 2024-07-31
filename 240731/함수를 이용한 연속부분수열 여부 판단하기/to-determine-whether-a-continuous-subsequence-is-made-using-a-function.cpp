@@ -10,8 +10,10 @@ void find(int a,int b){
         cin>>brr[i];
     }
     int count=0;
+    bool k=false;
     for(int i=0;i<a;i++){
         if(arr[i]==brr[0]){
+            k=true;
             for(int j=0;j<b;j++){
                 if(arr[i+j]==brr[j]){
                     count++;
@@ -21,11 +23,11 @@ void find(int a,int b){
                 cout<<"Yes";
                 break;
             }
-            else{
-                cout<<"No";
-            }
             count=0;
         }
+    }
+    if(k==false){
+        cout<<"No";
     }
 }
 int main() {
