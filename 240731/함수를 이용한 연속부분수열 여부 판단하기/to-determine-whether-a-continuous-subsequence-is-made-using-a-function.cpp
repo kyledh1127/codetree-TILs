@@ -13,7 +13,7 @@ void find(int a, int b) {
     }
     
     bool found = false;
-    for (int i = 0; i <= a - b; i++) {  // 첫 배열의 범위 내에서만 검사
+    for (int i = 0; i <= a; i++) {  // 첫 배열의 범위 내에서만 검사
         bool match = true;
         for (int j = 0; j < b; j++) {
             if (arr[i + j] != brr[j]) {
