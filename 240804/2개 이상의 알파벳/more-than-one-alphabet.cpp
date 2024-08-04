@@ -4,9 +4,8 @@ void find(string a){
     int count=0;
     
     for(int i=0;i<a.length();i++){
-        int k=a[i];
-        if(k==a[i+1]){
-            k=a[i+1];
+        if(a[i]==a[i+1]){
+            a[i]=a[i+1];
         }
         else{
             count++;
@@ -14,7 +13,7 @@ void find(string a){
 
     }
     if(count==0){
-        cout<<"N0";
+        cout<<"No";
     }
     else{
         cout<<"Yes";
