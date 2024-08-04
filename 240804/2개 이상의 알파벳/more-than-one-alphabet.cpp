@@ -1,24 +1,28 @@
 #include <iostream>
 using namespace std;
-int find(string a){
+void find(string a){
+    int count=0;
+    
     for(int i=0;i<a.length();i++){
-        for(int j=i+1;j<a.length();j++){
-            if(a[i]==a[j]){
-                return 0;
-                break;
-            }
+        int k=a[i];
+        if(k==a[i+1]){
+            k=a[i+1];
         }
+        else{
+            count++;
+        }
+
     }
-    return 1;
+    if(count==0){
+        cout<<"N0";
+    }
+    else{
+        cout<<"Yes";
+    }
 }
 int main() {
     string s;
     cin>>s;
-    if(find(s)==0){
-        cout<<"Yes";
-    }
-    else{
-        cout<<"No";
-    }
+    find(s);
     return 0;
 }
