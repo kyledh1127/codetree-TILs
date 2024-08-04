@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
-bool year(int year) {
-    if (year % 400 == 0) {
+bool year(int a){
+    if(a%4==0&&a%100!=0){
+        return true;  
+    }
+    else if(a%4==0&&a%100==0&&a%400==0){
         return true;
-    } else if (year % 100 == 0) {
-        return false;
-    } else if (year % 4 == 0) {
-        return true;
-    } else {
+    }
+    else{
         return false;
     }
 }
