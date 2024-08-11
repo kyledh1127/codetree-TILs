@@ -40,7 +40,7 @@ int main(){
         cout<<"No";
     }
     if(arr.length()!=brr.length()){
-        cout<<"No";
+        cout<<"Yes";
     }
     
 }
