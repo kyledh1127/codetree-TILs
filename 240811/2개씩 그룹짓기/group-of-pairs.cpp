@@ -12,7 +12,7 @@ int main() {
     sort(arr,arr+2*num);
     int *brr=new int[num];
     for(int i=0;i<num;i++){
-        brr[i]=arr[i]+arr[num+i-1];
+        brr[i]=arr[i]+arr[num+i];
     }
     int min=brr[0];
     for(int i=1;i<num;i++){
