@@ -32,15 +32,18 @@ int main(){
             }
         }
     }
-    
-    if(ans==0){
+    if(arr.length()!=brr.length()){
+        cout<<"No";
+    }
+    else{
+if(ans==0){
         cout<<"Yes";
     }
     else{
         cout<<"No";
     }
-    if(arr.length()!=brr.length()){
-        cout<<"Yes";
     }
+    
+    
     
 }
