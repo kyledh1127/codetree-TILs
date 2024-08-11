@@ -1,49 +1,27 @@
 #include <iostream>
 #include <algorithm>
 #include <string>
-#include<vector>
 using namespace std;
 
-int main(){
-    int num;
-    cin>>num;
-    string arr;
-    string brr;
-    for(int i=0;i<arr.length();i++){
-        cin>>arr[i];
+int main() {
+    string arr, brr;
+    cin >> arr >> brr;
+
+    // 문자열의 길이가 다르면 즉시 "No" 출력
+    if (arr.length() != brr.length()) {
+        cout << "No";
+        return 0;
     }
-    for(int i=0;i<brr.length();i++){
-        cin>>brr[i];
-    }
+
+    // 문자열을 정렬하여 비교
     sort(arr.begin(), arr.end());
     sort(brr.begin(), brr.end());
-    int ans=0;
-    if(arr.length()>brr.length()){
-        for(int i=0;i<brr.length();i++){
-        if(arr[i]!=brr[i]){
-            ans++;
-        }
-        }
+
+    if (arr == brr) {
+        cout << "Yes";
+    } else {
+        cout << "No";
     }
-    else{
-        for(int i=0;i<arr.length();i++){
-            if(arr[i]!=brr[i]){
-                ans++;
-            }
-        }
-    }
-    if(arr.length()!=brr.length()){
-        cout<<"No";
-    }
-    else{
-if(ans==0){
-        cout<<"Yes";
-    }
-    else{
-        cout<<"No";
-    }
-    }
-    
-    
-    
+
+    return 0;
 }
