@@ -39,5 +39,8 @@ int main(){
     else{
         cout<<"No";
     }
+    if(arr.length()!=brr.length()){
+        cout<<"No";
+    }
     
 }
