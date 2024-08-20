@@ -4,7 +4,7 @@ class score{
 public:
     char grade;
     int sco;
-    score(char a='p',int b=0){
+    score(char a='.',int b=100){
         this->grade=a;
         this->sco=b;
     }
@@ -21,10 +21,13 @@ int main() {
     for(int i=0;i<5;i++){
         if(scores[i].sco<min){
             min=scores[i].sco;
-            cout<<scores[i].grade<<" "<<scores[i].sco;
-                        break;
+
         }
     }
-    
+    for(int i=0;i<5;i++){
+        if(scores[i].sco==min){
+            cout<<scores[i].grade<<" "<<scores[i].sco;
+        }
+    }
     return 0;
 }
