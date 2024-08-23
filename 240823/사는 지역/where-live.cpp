@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 class per{
     public:
@@ -22,20 +23,24 @@ int main() {
     cin>>per1.name>>per1.phn>>per1.city;
     cin>>per2.name>>per2.phn>>per2.city;
     cin>>per3.name>>per3.phn>>per3.city;
-    if(per1.name>per2.name&&per1.name>per2.name){
+    string arr[3]={per1.name,per2.name,per3.name};
+    sort(arr, arr + 3);
+    if(arr[2]==per1.name){
         cout<<"name "<<per1.name<<"\n";
         cout<<"addr "<<per1.phn<<"\n";
         cout<<"city "<<per1.city<<"\n";
     }
-    else if(per2.name>per1.name&&per2.name>per3.name){
-        cout<<"name "<<per1.name<<"\n";
-        cout<<"addr "<<per1.phn<<"\n";
-        cout<<"city "<<per1.city<<"\n";
+    else if(arr[2]==per2.name){
+        cout<<"name "<<per2.name<<"\n";
+        cout<<"addr "<<per2.phn<<"\n";
+        cout<<"city "<<per2.city<<"\n";
     }
-    else if(per3.name>per1.name&&per3.name>per2.name){
-         cout<<"name "<<per3.name<<"\n";
+    else if(arr[2]==per3.name){
+        cout<<"name "<<per3.name<<"\n";
         cout<<"addr "<<per3.phn<<"\n";
         cout<<"city "<<per3.city<<"\n";
     }
+    
+    
     return 0;
 }
