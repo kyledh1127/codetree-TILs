@@ -4,7 +4,10 @@ using namespace std;
 
 int n;
 bool mul(int n){
-    if(n%2==0&&(n%10+n/10)%5==0){
+    int a=n/10;
+    int b=n%10;
+    int c=a+b;
+    if(n%2==0&&c%5==0){
         return true;
     }
     else{
@@ -14,7 +17,7 @@ bool mul(int n){
 int main() {
     cin >> n;
 
-    if(mul){
+    if(mul(n)){
         cout<<"Yes";
     }
     else{
